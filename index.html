@@ -12,11 +12,11 @@
     <form>
       <div>
         <label for="email">E-Mail:</label>
-        <input type="email" id="email" name="email" />
+        <input type="email" id="email" name="email" required />
       </div>
       <div>
         <label for="country">Country</label>
-        <input list="countries" id="country" name="country" />
+        <input list="countries" id="country" name="country" required />
         <datalist id="countries">
           <option value="Afganistan">Afghanistan</option>
           <option value="Albania">Albania</option>
@@ -276,16 +276,17 @@
       </div>
       <div>
         <label for="zip-code">Zip Code:</label>
-        <input type="text" id="zip-code" name="zip-code" />
+        <input type="text" id="zip-code" name="zip-code" required />
       </div>
       <div>
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" />
+        <input type="password" id="password" name="password" required />
       </div>
       <div>
         <label for="re-password">Re-Type Password:</label>
-        <input type="password" id="re-password" name="re-password" />
+        <input type="password" id="re-password" name="re-password" required />
       </div>
+      <button type="submit">Submit</button>
     </form>
     <script src="script.js"></script>
   </body>
