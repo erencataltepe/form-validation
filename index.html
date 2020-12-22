@@ -20,6 +20,9 @@
       <div>
         <label for="country">Country</label>
         <input list="countries" id="country" name="country" required />
+        <div class="error hidden" id="country-error">
+          Please select a country
+        </div>
         <datalist id="countries">
           <option value="Afganistan">Afghanistan</option>
           <option value="Albania">Albania</option>
@@ -280,14 +283,30 @@
       <div>
         <label for="zip-code">Zip Code:</label>
         <input type="text" id="zip-code" name="zip-code" required />
+        <div class="error hidden" id="zipcode-error">
+          Please give a valid zip code!
+        </div>
       </div>
       <div>
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          minlength="4"
+          maxlength="10"
+          required
+        />
+        <div class="error hidden" id="password-error">
+          Your password length must be between 4 and 10 characters!
+        </div>
       </div>
       <div>
         <label for="re-password">Re-Type Password:</label>
         <input type="password" id="re-password" name="re-password" required />
+        <div class="error hidden" id="repassword-error">
+          Please provide the same password again!
+        </div>
       </div>
       <button type="submit">Submit</button>
     </form>
