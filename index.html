@@ -282,7 +282,14 @@
       </div>
       <div>
         <label for="zip-code">Zip Code:</label>
-        <input type="text" id="zip-code" name="zip-code" required />
+        <input
+          type="text"
+          id="zip-code"
+          name="zip-code"
+          minlength="4"
+          maxlength="6"
+          required
+        />
         <div class="error hidden" id="zipcode-error">
           Please give a valid zip code!
         </div>
