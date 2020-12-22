@@ -2,3 +2,35 @@
   padding: 0;
   margin: 0;
 }
+
+input:invalid {
+  border: 2px dashed red;
+}
+
+input:focus:invalid {
+  background-color: lightcoral;
+}
+
+input:focus {
+  outline: none;
+}
+
+input:valid {
+  outline: none;
+  border: 2px solid lightblue;
+}
+
+.error {
+  font-weight: bold;
+  display: inline-block;
+  color: white;
+  background-color: red;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.active {
+  visibility: visible;
+}
